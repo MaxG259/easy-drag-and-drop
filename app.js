@@ -12,6 +12,14 @@ for (const placeholder of placeholders) {
 }
 
 function dragStart(event) {
+  if (event.dataTransfer) {
+    try {
+      event.dataTransfer.effectAllowed = 'move'
+      event.dataTransfer.setData('text/plain', '')
+    } catch (e) {
+      // ignore cross-browser quirks
+    }
+  }
   item.classList.add('hold')
   setTimeout(() => {
     item.classList.add('hide')
