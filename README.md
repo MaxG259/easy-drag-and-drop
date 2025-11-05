@@ -2,7 +2,7 @@
 Простой демонстрационный проект с нативным Drag & Drop на чистом JavaScript
 
 ### Демо
-- **Live (Vercel)**: `https://your-project-name.vercel.app`
+- **Live (Vercel)**: `https://easy-drag-and-drop.vercel.app/`
 
 ### Стек
 - HTML5, CSS3
